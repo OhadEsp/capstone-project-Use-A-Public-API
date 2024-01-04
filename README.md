@@ -15,13 +15,13 @@ To run the "Dream Date Generator" locally, follow these steps:
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://github.com/OhadEsp/capstone-project-Use-A-Public-API.git
+   git clone https://github.com/OhadEsp/capstone-project-dream-date-generator.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd capstone-project-Use-A-Public-API
+   cd capstone-project-dream-date-generator
    ```
 
 3. Install the necessary dependencies:
