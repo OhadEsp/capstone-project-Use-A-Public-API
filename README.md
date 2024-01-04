@@ -48,6 +48,7 @@ The Dream Date Generator is built using the following technologies:
 
 - [Node.js](https://nodejs.org/): A JavaScript runtime for server-side development.
 - [Express](https://expressjs.com/): A web application framework for Node.js.
+- [Body-parser](https://www.npmjs.com/package/body-parser): A middleware to parse incoming request bodies in a Node.js application.
 - [Axios](https://axios-http.com/): A promise-based HTTP client for making API requests.
 - [EJS](https://ejs.co/): A simple templating language that lets you embed JavaScript into HTML.
 - [Bootstrap](https://getbootstrap.com/): A popular CSS framework for building responsive and visually appealing web pages.
