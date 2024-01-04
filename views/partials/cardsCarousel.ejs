@@ -1,0 +1,42 @@
+<div id="myCarousel" class="w-50 mb-5 carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card bg-transparent border-white">
+            <img src="<%= results[0].picture.large %>" class="card-img-top p-5" alt="...">
+            <div class="card-body p-5">
+              <h5 class="card-title"><%= results[0].name.title %> <%= results[0].name.first %> <%= results[0].name.last %></h5>
+              <p class="card-text"><b>Address:</b><br/><%= results[0].location.street.number %> <%= results[0].location.street.name %>, <%= results[0].location.city %>, <%= results[0].location.state %> <%= results[0].location.postcode %></p>
+              <p class="card-text"><b>Phone:</b><br/><%= results[0].phone %></p>
+              <p class="card-text"><b>Cell:</b><br/><%= results[0].cell %></p>
+              <p class="card-text"><b>Email:</b><br/><%= results[0].email %></p>
+              <p class="card-text"><b>B-Day:</b><br/><%= bDays[0] %></p>
+            </div>
+        </div>
+      </div>
+      <% if (results.length > 1) { %>
+        <% for (let i = 1; i < results.length; i++) { %>
+            <div class="carousel-item">
+                <div class="card bg-transparent border-white">
+                    <img src="<%= results[i].picture.large %>" class="card-img-top p-5" alt="...">
+                    <div class="card-body p-5">
+                    <h5 class="card-title"><%= results[i].name.title %> <%= results[i].name.first %> <%= results[i].name.last %></h5>
+                    <p class="card-text"><b>Address:</b><br/><%= results[i].location.street.number %> <%= results[i].location.street.name %>, <%= results[i].location.city %>, <%= results[i].location.state %> <%= results[i].location.postcode %></p>
+                    <p class="card-text"><b>Phone:</b><br/><%= results[i].phone %></p>
+                    <p class="card-text"><b>Cell:</b><br/><%= results[0].cell %></p>
+                    <p class="card-text"><b>Email:</b><br/><%= results[i].email %></p>
+                    <p class="card-text"><b>B-Day:</b><br/><%= bDays[i] %></p>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+      <% } %>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>

@@ -1,0 +1,25 @@
+body {
+    background-image: url("/images/loveBackground.jpg");
+}
+
+#dream-date-generator-h1 {
+    color: white;
+}
+
+.card-img-top {
+    border-radius: 50%;
+}
+
+.card-title, .card-text {
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 4vw;
+    }
+    
+    .card-text {
+        font-size: 3vw;
+    }
+}
